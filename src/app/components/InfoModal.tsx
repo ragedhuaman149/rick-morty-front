@@ -28,9 +28,9 @@ const InfoModal = ({ item, open, setClose }:InfoModalProps) => {
           <p className='text-gray-800'>{item?.species}</p>
           <div className='bg-yellow-700 text-white p-3 rounded-md my-2 text-center cursor-pointer'
             onClick={() =>{
-                console.log('HOLII ', character)
-                if(item){
-                    setFavorite(item)
+                console.log('HOLII ', item)
+                if(character){
+                    setFavorite(character)
                     setCharacter(null)
                     setIsOpenModal(false)
                 } 

@@ -13,17 +13,12 @@ const Card = ({ item }: CardProps) => {
         setCharacter(item)
     }
 
-    const handleLeaveHoverCard = () =>{
-        setCharacter(null)
-    }
-
     return (
         <div className=''>
             <div 
                 className="relative md:w-40 sm:w-full h-72 bg-cover bg-center rounded-md" 
                 style={{ backgroundImage: `url(${image})` }}
                 onMouseEnter={() => handleHoverCard()}
-                onMouseLeave={() => handleLeaveHoverCard()}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-md">
                     <div className='flex flex-col'>
