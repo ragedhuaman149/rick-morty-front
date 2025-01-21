@@ -29,8 +29,8 @@ const InfoModal = ({ item, open, setClose }:InfoModalProps) => {
           <div className='bg-yellow-700 text-white p-3 rounded-md my-2 text-center cursor-pointer'
             onClick={() =>{
                 console.log('HOLII ', character)
-                if(character){
-                    setFavorite(character)
+                if(item){
+                    setFavorite(item)
                     setCharacter(null)
                     setIsOpenModal(false)
                 } 
