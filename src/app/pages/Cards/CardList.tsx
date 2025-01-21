@@ -10,7 +10,7 @@ const CardList = ({ data }: CardListProps) => {
     <div>
         <div className="grid md:grid-cols-5 gap-1 sm:grid-cols-1">
             {
-                data?.map((item, i) => (
+                data?.slice(0,9).map((item, i) => (
                     <Card key={i} item={item}/>
                 ))
             }

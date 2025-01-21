@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { useEffect } from "react";
 import useMainStore from "./store/mainStore";
+import Header from "./components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,12 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div
-          className="bg-cover bg-center h-40"
-          style={{ backgroundImage: "url('/header_background.webp')" }}
-        >
-
-        </div>
+        <Header />
         {children}
       </body>
     </html>
